@@ -10,22 +10,18 @@
 <body>
     
    <div class="container">
-    <div class="main">
-        <div class="main__header">
-            <input class="input" type="text">
-
-            <select>
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-            </select>
-
-            <button class="btn">добавить</button>
+    <div class="todo">
+        <div class="todo__input">
+          <input class="todo__text" type="text">
+          <span class="todo__add"></span>
         </div>
-
-        <div class="main__content">
-            
-        </div>
-   </div>
+        <select class="todo__options">
+          <option value="active">активные</option>
+          <option value="completed">завершённые</option>
+          <option value="deleted">удалённые</option>
+        </select>
+        <ul class="todo__items" data-todo-option="active"></ul>
+      </div>
    </div>
 
     <script src="./js/app.js"></script>
